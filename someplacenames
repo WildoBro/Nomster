@@ -1,0 +1,21 @@
+Place.create(name: 'Sushi Sushi', address: '123 Fake Street, Bethesda, MD 20840', description: 'Great and cheap sushi!')
+
+Place.create(name: 'Convenience Store', address: '2 Street, Las Vegas, NV 02139', description: 'So much convenience!')
+
+Place.create(name: '7-11', address: '1 Road, Cambridge, MA 02139', description: 'Their Slurpees are delicious')
+
+Place.create(name: 'Burger Hut', address: '7 Main Street, Potomac, MD 20854', description: 'Decent Burgers, but they got Pinball')
+
+Place.create(name: 'Ribs Ribs Ribs', address: '17 Rib Street, Omaha, NE 68002', description: 'They do not even have ribs on the menu!')
+
+Place.create(name: 'Steak n Shake', address: '564 Roadson Street, Beverly Hills, CA 90210', description: 'They have THE best milkshakes in town')
+
+Place.create(name: 'Pollos Hermanos', address: '4257 Isleta Blvd SW, Albuquerque, NM 87105', description: 'The management seemed super nice')
+
+Place.create(name: 'Yasmin's Deli', address: '4998 Streetson Street, Columbus, OH 43085', description: 'They make their own cream cheese!')
+
+Place.create(name: 'Area 4 Again', address: '5464 Jefferson Lane, Huntington, New York 11743', description: 'Again, one of the best Pizza places!')
+
+Place.create(name: 'Bar and Kitchen', address: '322 Fancy Street, Cambridge, MA 02139', description: 'The drink deals are top-notch')
+
+Place.create(name: 'Fast Food Stop', address: '1 Side Street, Potomac, MD 20854', description: 'Wayyyy too greasy than it needs to be')
