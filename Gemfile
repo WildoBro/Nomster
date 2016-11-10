@@ -45,3 +45,6 @@ gem 'will_paginate'
 
 # Add SimpleForm Gem
 gem 'simple_form'
+
+# Add Devise
+gem 'devise', '>= 3.2.4'
