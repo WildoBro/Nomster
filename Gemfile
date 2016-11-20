@@ -48,3 +48,9 @@ gem 'simple_form'
 
 # Add Devise
 gem 'devise', '>= 3.2.4'
+
+# Add Geocoder
+gem 'geocoder', '1.3.4'
+
+# Add Figaro
+gem 'figaro', '>= 1.0.0'
