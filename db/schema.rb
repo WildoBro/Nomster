@@ -28,6 +28,16 @@ ActiveRecord::Schema.define(version: 20161123003455) do
   add_index "comments", ["place_id"], name: "index_comments_on_place_id", using: :btree
   add_index "comments", ["user_id", "place_id"], name: "index_comments_on_user_id_and_place_id", using: :btree
 
+  create_table "photos", force: true do |t|
+    t.string   "caption"
+    t.string   "photo"
+    t.integer  "place_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "photos", ["place_id"], name: "index_photos_on_place_id", using: :btree
+
   create_table "places", force: true do |t|
     t.string   "name"
     t.text     "description"
