@@ -54,3 +54,6 @@ gem 'geocoder', '1.3.4'
 
 # Add Figaro
 gem 'figaro', '>= 1.0.0'
+
+# Add Carrierwave for file uploading
+gem 'carrierwave', '>=1.0.0.rc', '< 2.0'
