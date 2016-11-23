@@ -44,7 +44,7 @@
   <% @place.photos.each do |photo| %>
     <div>
       <blockquote>
-        <b><%= photo.photo %></b> -
+        <b><%= image_tag photo.picture %></b> -
           <%= photo.caption %>
         <small><%= photo.place_id %></small>
       </blockquote>
@@ -99,8 +99,8 @@
   </div>
 <% end %>
 
-<%= simple_form_for @photo, :url => place_photos_path(@place) do |f| %>
-  <%= f.input :photo %>
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+  <%= f.input :picture %>
   <%= f.input :caption %>
   <%= f.submit "Upload Photo", class: 'btn btn-primary' %>
 <% end %>
