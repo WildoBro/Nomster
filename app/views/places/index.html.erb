@@ -8,7 +8,7 @@
       <small><%= place.user.email %></small>
     <% end %>
 
-    <% if place.comments.last.present?%>
+    <% if place.comments.last.present? %>
       <div class="col-xs-12">
         <blockquote>
           <% if place.comments.last.humanized_rating.present? %>
@@ -16,6 +16,16 @@
           <% end %>
           <%= place.comments.last.message %>
           <small><%= place.comments.last.user.email %></small>
+        </blockquote>
+      </div>
+    <% end %>
+
+    <% if place.photos.last.present? %>
+      <div class="col-xs-12">
+        <blockquote>
+          <% if place.photos.last.present? %>
+            <b><%= image_tag place.photos.last.picture %></b> - 
+          <% end %>
         </blockquote>
       </div>
     <% end %>
