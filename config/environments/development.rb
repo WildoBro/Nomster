@@ -1,16 +1,16 @@
 Rails.application.configure do
   # Adds GMail functionality... Activate lines 5 through 13 to allow emails
-  config.action_mailer.delivery_method = :test
+  config.action_mailer.delivery_method = :smtp
 
-  # config.action_mailer.smtp_settings = {
-  #   address: "smtp.gmail.com",
-  #   port: 587,
-  #   domain: "example.com",
-  #   authentication: "plain",
-  #   enable_starttls_auto: true,
-  #   user_name: ENV['GMAIL_ADDRESS'],
-  #   password: ENV['GMAIL_PASSWORD']
-  # }
+  config.action_mailer.smtp_settings = {
+    address: "smtp.gmail.com",
+    port: 587,
+    domain: "example.com",
+    authentication: "plain",
+    enable_starttls_auto: true,
+    user_name: ENV['GMAIL_ADDRESS'],
+    password: ENV['GMAIL_PASSWORD']
+  }
 
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -19,7 +19,7 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
 
   #Added for devise gem
-  config.action_mailer.default_url_options = { host: 'nomster-william-broder.herokuapp.com' }
+  config.action_mailer.default_url_options = { host: 'localhost:3030' }
 
   config.cache_classes = false
 
