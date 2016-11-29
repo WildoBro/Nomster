@@ -6,8 +6,8 @@ class PhotosController < ApplicationController
     redirect_to place_path(@place)
   end
 
-    def photo_params
-      params.require(:photo).permit(:picture, :caption)
-    end
+  def photo_params
+    params.require(:photo).permit(:picture, :caption)
+  end
 
 end
