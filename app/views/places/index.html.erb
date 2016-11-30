@@ -13,9 +13,9 @@
         Find the best restaurants
       </div>
     </div>
-    <div class="item" style="background-image:url(<%= image_path "slider2.jpg" %>);"
+    <div class="item" style="background-image:url(<%= image_path "slider2.jpg" %>);">
       <div class="carousel-caption">
-        Looking for seafood?
+        Even post your own
       </div>
     </div>
 
@@ -35,9 +35,6 @@
     <h1><%= link_to place.name, place_path(place) %></h1>
     <i><%= place.address %></i><br /><br />
     <p><%= place.description %></p><br />
-    <% if place.user.present? %>
-      <small><%= place.user.email %></small>
-    <% end %>
 
     <% if place.comments.last.present? %>
       <div class="col-xs-12">
@@ -52,14 +49,18 @@
     <% end %>
 
     <% if place.photos.last.present? %>
-      <div class="col-xs-12">
-        <blockquote>
-          <% if place.photos.last.present? %>
-            <b><%= image_tag place.photos.last.picture %></b> - 
-          <% end %>
-        </blockquote>
+      <div class="col-xs-12 text-center">
+        <h1>
+            <b><%= image_tag place.photos.last.picture %></b> - <%= place.photos.last.caption %>
+        </h1>
       </div>
     <% end %>
+
+    <div class="text-center">
+    <% if place.user.present? %>
+      <small>This place was entered by: <%= place.user.email %></small>
+    <% end %>
+    </div>
 
   </div>
 <% end %>
